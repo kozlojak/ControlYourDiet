@@ -1,0 +1,5 @@
+rootProject.name = 'control-your-diet-app'
+include 'control-your-diet-model'
+include 'control-your-diet-shared'
+include 'control-your-diet-domain'
+include 'control-your-diet-ws'
