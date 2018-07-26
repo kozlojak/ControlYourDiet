@@ -14,5 +14,4 @@ repositories {
 dependencies {
     compile project(':control-your-diet-shared')
     compile project(':control-your-diet-model')
-    compile group: 'org.modelmapper', name: 'modelmapper', version: '2.0.0'
 }

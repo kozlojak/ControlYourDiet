@@ -16,3 +16,13 @@ dependencies {
     compile project(':control-your-diet-model')
     compile project(':control-your-diet-shared')
 }
+
+springBoot {
+    mainClassName = "pl.jakubkozlowski.projects.controlyourdiet.ControlYourDietApp"
+}
+
+jar {
+    manifest {
+        attributes('Main-Class': 'pl.jakubkozlowski.projects.controlyourdiet.ControlYourDietApp')
+    }
+}
