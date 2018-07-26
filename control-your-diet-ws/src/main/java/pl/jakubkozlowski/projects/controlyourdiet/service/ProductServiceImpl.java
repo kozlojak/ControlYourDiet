@@ -56,6 +56,7 @@ public class ProductServiceImpl implements ProductService{
         productToUpdate.setCellulose(productTO.getCellulose());
         ProductEntity productToUpdateEntity=productConverter.convertTO(productTO);
         productRepository.save(productToUpdateEntity);
+        productRepository.deleteById(id);
         return productConverter.convertEntity(productToUpdateEntity);
 
     }
